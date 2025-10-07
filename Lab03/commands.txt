@@ -1,0 +1,79 @@
+1. mkdir linux_lab
+ cd linux_lab
+2. mkdir -p backups projects/{scripts,web/static} temp
+3. tree
+├── backups
+├── projects
+│   ├── scripts
+│   └── web
+│       └── static
+└── temp
+4.  cd projects/scripts
+touch main.py config.yaml utils.sh
+5. cd ~/linux_lab/projects/web/static
+touch index.html styles.css
+6. cat > index.html                  
+something
+7. cd ~/linux_lab/
+cp projects/web/static/styles.css temp/old_styles.css
+8. mv projects/scripts/config.yaml temp/
+9. cp projects/scripts/*.sh temp/
+10. find . -type f 
+11. ln projects/scripts/main.py ~/hard_link.txt
+12. cat projects/scripts/main.py 
+13. cat > ~/hard_link.txt        
+text
+14. cat projects/scripts/main.py 
+text
+cat ~/hard_link.txt        
+text
+15. ln -s ~/linux_lab/projects/web/static temp/web_link
+16. cd -P temp/web_link
+17. tree
+.
+├── index.html
+└── styles.css
+
+1 directory, 2 files
+16.2. tar -cf backups/projects_backup.tar projects/
+17.2. tar -czf backups/web_backup.tar.gz projects/web
+18. zip backups/important_files.zip projects/scripts/main.py projects/scripts/utils.sh
+19. mkdir -p temp/restored_web && tar -xzf backups/web_backup.tar.gz -C temp/restored_web/
+20. unzip -l backups/important_files.zip
+21. rm -rf temp/*  
+22. rm -rf backups/*
+23. 
+24. whoami >> report.txt
+logname >> report.txt
+pwd >> report.txt    
+id >> report.txt
+ls -l projects/scripts/ >> report.txt
+25. date >> report.txt
+
+26. cp report.txt ~/
+27. cd
+zip -r -P 1111 ~/linux_lab_final.zip linux_lab/
+28. ls -lh ~/linux_lab_final.zip
+29. rm -rf ~/linux_lab
+30. unzip -P 1111 ~/linux_lab_final.zip
+31. cat ~/linux_lab/report.txt
+ignat-buslovich
+/home/ignat-buslovich/linux_lab
+uid=1000(ignat-buslovich) gid=1000(ignat-buslovich) groups=1000(ignat-buslovich),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),100(users),115(lpadmin)
+total 4
+-rw-rw-r-- 2 ignat-buslovich ignat-buslovich 5 Oct  6 17:46 main.py
+-rw-rw-r-- 1 ignat-buslovich ignat-buslovich 0 Oct  6 16:58 utils.sh
+Tue Oct  7 12:27:37 PM +03 2025
+32. ~ tree ~/linux_lab/
+/home/ignat-buslovich/linux_lab/
+├── backups
+├── projects
+│   ├── scripts
+│   │   ├── main.py
+│   │   └── utils.sh
+│   └── web
+│       └── static
+│           ├── index.html
+│           └── styles.css
+├── report.txt
+└── temp

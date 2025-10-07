@@ -1,0 +1,8 @@
+ignat-buslovich
+ignat-buslovich
+/home/ignat-buslovich/linux_lab
+uid=1000(ignat-buslovich) gid=1000(ignat-buslovich) groups=1000(ignat-buslovich),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),100(users),115(lpadmin)
+total 4
+-rw-rw-r-- 2 ignat-buslovich ignat-buslovich 5 Oct  6 17:46 main.py
+-rw-rw-r-- 1 ignat-buslovich ignat-buslovich 0 Oct  6 16:58 utils.sh
+Tue Oct  7 12:27:37 PM +03 2025
