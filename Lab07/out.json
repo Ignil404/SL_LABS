@@ -1,0 +1,42 @@
+{
+  "filtered_customers": [
+    {
+      "customer_id": "cust_abc_001",
+      "name": "Alex",
+      "email": "alex@company.com",
+      "phone": "+1234567890",
+      "city": "New York",
+      "total_orders": 15,
+      "loyalty_points": 250
+    },
+    {
+      "customer_id": "cust_xyz_003",
+      "name": "Max",
+      "email": "max@company.com",
+      "phone": "+1122334455",
+      "city": "Berlin",
+      "total_orders": 22,
+      "loyalty_points": 380
+    },
+    {
+      "customer_id": "cust_123_004",
+      "name": "Olga",
+      "email": "olga@company.com",
+      "phone": "+1555666777",
+      "city": "Paris",
+      "total_orders": 12,
+      "loyalty_points": 180
+    },
+    {
+      "customer_id": "cust_mno_005",
+      "name": "Victor",
+      "email": "victor@company.com",
+      "phone": "+1444333222",
+      "city": "Tokyo",
+      "total_orders": 30,
+      "loyalty_points": 500
+    }
+  ],
+  "filter_criteria": "total_orders >= 10",
+  "total_count": 4
+}
